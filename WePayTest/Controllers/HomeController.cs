@@ -15,7 +15,7 @@ namespace WePayTest.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.dfdf sdsd dfd";
+            ViewBag.Message = "Your application description page.dfdf sdsd jhdfd";
 
             return View();
         }
