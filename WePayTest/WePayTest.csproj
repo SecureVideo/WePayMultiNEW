@@ -254,7 +254,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="appspec.yml" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -348,4 +347,15 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
+  
+   <ItemGroup>
+        <MySourceFiles Include="appspec.yml"/>
+    </ItemGroup>
+
+    <Target Name="CopyFiles" AfterTargets="Build">
+        <Copy
+            SourceFiles="@(MySourceFiles)"
+            DestinationFolder="$(OutDir)\_PublishedWebsites"
+        />
+    </Target>
 </Project>
