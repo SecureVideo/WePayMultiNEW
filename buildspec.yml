@@ -13,4 +13,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'C:\codebuild\artifacts\_PublishedWebsites\${env:PROJECT}'
+  base-directory: 'C:\codebuild\artifacts\_PublishedWebsites'
